@@ -99,6 +99,7 @@
 .reason__draw {
     margin: 1%;
     padding: 1%;
+    font-family: revert;
 }
 
 .reason__heading {
