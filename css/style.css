@@ -1,0 +1,136 @@
+.header {
+    width: auto;
+    height: 10%;
+    border-bottom: thin solid #3C5159;
+    background-color: #80C7F2
+}
+
+.header__logo {
+    display: inline-block;
+    width: 10%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+.logo__img {
+    width: 95%;
+    padding: 5%;
+    margin: auto;
+}
+
+.header__name {
+    text-align: center;
+    color: black;
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+    padding: 0;
+}
+
+.header__menu {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu__item {
+    text-decoration: none;
+    color: black;
+}
+
+.clue {
+    padding: 0;
+}
+
+.clue__weather {
+    width: 14%;
+    margin: 1%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #A7DDF2;
+    border: thin double #7CDDF2;
+    text-align: center;
+}
+
+.clue__main-note {
+    width: 80%;
+    margin: 1%;
+    display: inline-block;
+}
+
+.general-info {
+    background-color: #A7DDF2;
+    border: thick double #3C5159;
+}
+
+.general-info__text {
+    margin: 1%;
+}
+
+.general-info__header {
+    margin: 1%;
+}
+
+.reasons__note {
+    margin: 1%;
+}
+
+.reasons {
+    padding: 0.1%;
+}
+
+.reason {
+    padding: 0.5%;
+    background-color: #A7DDF2;
+    box-shadow: 10px 10px 10px #4BB2F2;
+}
+
+.reason__code {
+    width: 100%;
+}
+
+.reason__text {
+    margin: 1%;
+}
+
+.reason__draw {
+    margin: 1%;
+    padding: 1%;
+}
+
+.reason__heading {
+    margin: 1%;
+}
+
+.gallery {
+    padding: 0;
+}
+
+.gallery__img {
+    display: inline-block;
+    margin: 1%;
+    width: 48%;
+}
+
+.footer {
+    background-color: #80C7F2;
+    height: 20px;
+    border-top: thin solid #3C5159;
+}
+
+.footer__quote {
+    width: auto;
+    display: table;
+    margin: auto;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    font-family: sans-serif;
+}

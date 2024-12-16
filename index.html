@@ -5,40 +5,45 @@
     <meta name="keywords" content="Саратов, поездка, путешествие, лучший город">
     <meta name="description" content="Саратов - лучший город для вашей следующей поездки. И вот вам на это n причин...">
     <title>n причин посетить Саратов</title>
+    <link rel="stylesheet" href="/css/style.css">
+<!--    <link rel="stylesheet" href="outline-prototype-safe.css">-->
 </head>
 <body>
-<header>
-    <img src="img/Coat_of_Arms_of_Saratov.svg" width="150px" alt="Герб">
-    <h1>N причин посетить Саратов</h1>
-<nav>
-    <ul>
-    <li><a href="index.html">Главная</a></li>
-    <li><a href="photo.html">Фото</a></li>
-    <li><a href="reviews.html">(Не)?смешные мемы</a></li>
-        <li><a href="souvenirs.html">Сувениры</a></li>
-    </ul>
-</nav>
+<header class="header">
+    <div class="logo header__logo">
+        <img class="logo__img" src="img/Coat_of_Arms_of_Saratov.svg" width="150px" alt="Герб">
+    </div><h1 class="header__name">N причин посетить Саратов</h1><nav class="header__menu menu">
+        <ul class="menu__list">
+            <li><a href="index.html" class="menu__item">Главная</a></li>
+            <li><a href="photo.html" class="menu__item">Фото</a></li>
+            <li><a href="reviews.html" class="menu__item">(Не)?смешные мемы</a></li>
+            <li><a href="souvenirs.html" class="menu__item">Сувениры</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
-    <article>
-        <h1>Инфа, скопированная с википедии</h1>
-        <p>Сара́тов — город на юго-востоке европейской части России, административный центр Саратовской области. Крупный культурный, экономический и образовательный центр Поволжья. Семнадцатый по численности населения город России. Не будучи городом-миллионером, одновременно является центром Саратовской агломерации, население которой превышает 1,3 миллиона человек.
+    <div class="clue">
+    <article class="general-info clue__main-note">
+        <h1 class="general-info__header">Инфа, скопированная с википедии</h1>
+        <p class="general-info__text">Сара́тов — город на юго-востоке европейской части России, административный центр Саратовской области. Крупный культурный, экономический и образовательный центр Поволжья. Семнадцатый по численности населения город России. Не будучи городом-миллионером, одновременно является центром Саратовской агломерации, население которой превышает 1,3 миллиона человек.
         </p>
-<p>Находится на правом берегу Волгоградского водохранилища реки Волги, напротив устья реки Саратовки и города Энгельса, расположенных на противоположном берегу. Расстояние 389 км от города Волгограда и 442 км от города Самары, в 858 км к юго-востоку от столицы России города Москвы.</p>
+<p class="general-info__text">Находится на правом берегу Волгоградского водохранилища реки Волги, напротив устья реки Саратовки и города Энгельса, расположенных на противоположном берегу. Расстояние 389 км от города Волгограда и 442 км от города Самары, в 858 км к юго-востоку от столицы России города Москвы.</p>
     </article>
-    <aside>
+    <aside class="clue__weather">
         <p>сейчас в Саратове -6 °C</p>
     </aside>
-    <section>
-        <h2>Любителям интересных (или не очень) фактов</h2>
+    </div>
+    <div class="reasons">
+    <section class="reason reasons__note">
+        <h2 class="reason__heading">Любителям интересных (или не очень) фактов</h2>
         <ol>
             <li><p>Как поется в одной известной в узких кругах песне:</p>
                 <blockquote>
                     You take the man <strong>out of the city</strong>, not the city out the man
                 </blockquote>
             <p>Но все мы знаем, что в случае Саратова нельзя забрать человека из города</p>
-                <pre><code>
+                <pre class="reason__code"><code>
     def leave_Saratov():
         raise Exception("невозможно покинуть Саратов")
                 </code></pre>
@@ -48,28 +53,29 @@
             <li>А еще нам гимн написал Газманов</li>
         </ol>
     </section>
-    <section>
-        <h2>Любителям булочек и тортиков</h2>
-        <p><q>Вот сначала — они, а потом уже <s>Ариана Гранде</s> Булочные Ф. Вольчека, <s>Леди Гага</s> Цех 85 и все остальные. Вот они — стоят на вершине.</q></p>
-        <img src="img/назук.jpg" alt="назук" width="300px">
-        <img src="img/яблонька.webp" alt = "яблонька" width="300px">
+    <section class="reason reasons__note">
+        <h2 class="reason__heading">Любителям булочек и тортиков</h2>
+        <p class="reason__text"><q>Вот сначала — они, а потом уже <s>Ариана Гранде</s> Булочные Ф. Вольчека, <s>Леди Гага</s> Цех 85 и все остальные. Вот они — стоят на вершине.</q></p>
+        <div class="gallery">
+        <img class="gallery__img" src="img/назук.jpg" alt="назук" width="300px"><img class="gallery__img" src="img/яблонька.webp" alt = "яблонька" width="300px">
+        </div>
     </section>
-    <section>
-        <h2>Тем, кто немного дед инсайд</h2>
-        <p>Это уточка. А знаете, где еще есть много уточек, на которых можно посмотреть в любое время года? Конечно, в Саратовском городском парке</p>
-        <pre>
+    <section class="reason reasons__note">
+        <h2 class="reason__heading">Тем, кто немного дед инсайд</h2>
+        <p class="reason__text">Это уточка. А знаете, где еще есть много уточек, на которых можно посмотреть в любое время года? Конечно, в Саратовском городском парке</p>
+        <pre class="reason__draw">
             ▄▀▀▀▀▄
             █  ▀ █▄▄
         ▄ ▄▄▄▀▄ █▀▀▀
         █▀▄  ▀▄  ▀▄
         █  ▀▀▀    █
-         ▀▄▄▄▄▄▄▄▀
-        </pre>
+         ▀▄▄▄▄▄▄▄▀</pre>
     </section>
+    </div>
 </main>
 
-<footer>
-<q>В деревню, к тетке, в глушь, в Саратов...</q>
+<footer class="footer">
+<q class="footer__quote">В деревню, к тетке, в глушь, в Саратов...</q>
 </footer>
 </body>
 </html>
