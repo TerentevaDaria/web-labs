@@ -10,67 +10,117 @@
 </head>
 <body>
 <header class="header">
-    <div class="logo header__logo">
-        <img class="logo__img" src="img/Coat_of_Arms_of_Saratov.svg" width="150px" alt="Герб">
-    </div><h1 class="header__name">N причин посетить Саратов</h1><nav class="header__menu menu">
-        <ul class="menu__list">
-            <li><a href="index.html" class="menu__item">Главная</a></li>
-            <li><a href="photo.html" class="menu__item">Фото</a></li>
-            <li><a href="reviews.html" class="menu__item">(Не)?смешные мемы</a></li>
-            <li><a href="souvenirs.html" class="menu__item">Сувениры</a></li>
-        </ul>
+    <div class="title">
+        <div class="logo header__logo">
+            <img class="logo__img" src="img/Coat_of_Arms_of_Saratov.svg" width="150px" alt="Герб">
+        </div>
+        <h1 class="header__name">N причин посетить Саратов</h1>
+    </div>
+    <nav class="header__menu menu">
+        <a href="index.html" class="menu__item">Главная</a>
+        <a href="photo.html" class="menu__item">Фото</a>
+        <a href="reviews.html" class="menu__item">(Не)?смешные мемы</a>
+        <a href="souvenirs.html" class="menu__item">Сувениры</a>
     </nav>
 </header>
 
-<main>
+<main class="main">
     <div class="clue">
-    <article class="general-info clue__main-note">
-        <h1 class="general-info__header">Инфа, скопированная с википедии</h1>
-        <p class="general-info__text">Сара́тов — город на юго-востоке европейской части России, административный центр Саратовской области. Крупный культурный, экономический и образовательный центр Поволжья. Семнадцатый по численности населения город России. Не будучи городом-миллионером, одновременно является центром Саратовской агломерации, население которой превышает 1,3 миллиона человек.
-        </p>
-<p class="general-info__text">Находится на правом берегу Волгоградского водохранилища реки Волги, напротив устья реки Саратовки и города Энгельса, расположенных на противоположном берегу. Расстояние 389 км от города Волгограда и 442 км от города Самары, в 858 км к юго-востоку от столицы России города Москвы.</p>
-    </article>
-    <aside class="clue__weather">
-        <p>сейчас в Саратове -6 °C</p>
-    </aside>
+        <article class="general-info clue__main-note">
+            <h1 class="general-info__header">Инфа, скопированная с википедии</h1>
+            <p class="general-info__text">Сара́тов — город на юго-востоке европейской части России, административный центр Саратовской области. Крупный культурный, экономический и образовательный центр Поволжья. Семнадцатый по численности населения город России. Не будучи городом-миллионером, одновременно является центром Саратовской агломерации, население которой превышает 1,3 миллиона человек.
+            </p>
+            <p class="general-info__text">Находится на правом берегу Волгоградского водохранилища реки Волги, напротив устья реки Саратовки и города Энгельса, расположенных на противоположном берегу. Расстояние 389 км от города Волгограда и 442 км от города Самары, в 858 км к юго-востоку от столицы России города Москвы.</p>
+        </article>
+        <aside class="clue__weather">
+            <p>сейчас в Саратове -6 °C</p>
+        </aside>
     </div>
     <div class="reasons">
-    <section class="reason reasons__note">
-        <h2 class="reason__heading">Любителям интересных (или не очень) фактов</h2>
-        <ol>
-            <li><p>Как поется в одной известной в узких кругах песне:</p>
-                <blockquote>
-                    You take the man <strong>out of the city</strong>, not the city out the man
-                </blockquote>
-            <p>Но все мы знаем, что в случае Саратова нельзя забрать человека из города</p>
-                <pre class="reason__code"><code>
-    def leave_Saratov():
-        raise Exception("невозможно покинуть Саратов")
-                </code></pre>
+        <section class="reason reasons__note">
+            <h2 class="reason__heading">Любителям интересных (или не очень) фактов</h2>
+            <ol>
+                <li><p>Как поется в одной известной в узких кругах песне:</p>
+                    <blockquote>
+                        You take the man <strong>out of the city</strong>, not the city out the man
+                    </blockquote>
+                <p>Но все мы знаем, что в случае Саратова нельзя забрать человека из города</p>
+                    <pre class="reason__code"><code>
+        def leave_Saratov():
+            raise Exception("невозможно покинуть Саратов")
+                    </code></pre>
 
-            </li>
-            <li>Жизнь в Саратове - сплошной цирк. Именно поэтому здесь был открыт один из первых цирков в России</li>
-            <li>А еще нам гимн написал Газманов</li>
-        </ol>
-    </section>
+                </li>
+                <li>Жизнь в Саратове - сплошной цирк. Именно поэтому здесь был открыт один из первых цирков в России</li>
+                <li>А еще нам гимн написал Газманов</li>
+            </ol>
+        </section>
     <section class="reason reasons__note">
         <h2 class="reason__heading">Любителям булочек и тортиков</h2>
         <p class="reason__text"><q>Вот сначала — они, а потом уже <s>Ариана Гранде</s> Булочные Ф. Вольчека, <s>Леди Гага</s> Цех 85 и все остальные. Вот они — стоят на вершине.</q></p>
         <div class="gallery">
-        <img class="gallery__img" src="img/назук.jpg" alt="назук" width="300px"><img class="gallery__img" src="img/яблонька.webp" alt = "яблонька" width="300px">
+            <img class="gallery__img" src="img/назук.jpg" alt="назук" width="300px">
+            <img class="gallery__img" src="img/яблонька.webp" alt = "яблонька" width="300px">
         </div>
     </section>
-    <section class="reason reasons__note">
-        <h2 class="reason__heading">Тем, кто немного дед инсайд</h2>
-        <p class="reason__text">Это уточка. А знаете, где еще есть много уточек, на которых можно посмотреть в любое время года? Конечно, в Саратовском городском парке</p>
-        <pre class="reason__draw">
+        <section class="reason reasons__note">
+            <h2 class="reason__heading">Тем, кто немного дед инсайд</h2>
+            <p class="reason__text">Это уточка. А знаете, где еще есть много уточек, на которых можно посмотреть в любое время года? Конечно, в Саратовском городском парке</p>
+            <pre class="reason__draw">
             ▄▀▀▀▀▄
             █  ▀ █▄▄
         ▄ ▄▄▄▀▄ █▀▀▀
         █▀▄  ▀▄  ▀▄
         █  ▀▀▀    █
          ▀▄▄▄▄▄▄▄▀</pre>
-    </section>
+        </section>
+        <section class="reason reasons__note">
+            <h2 class="reason__heading">МЕМЫ</h2>
+            <div class="gallery">
+                <img class="gallery__img" src="img/мемы/63038af676761_img_desktop.jpg" alt="Самара" width="300px">
+                <img class="gallery__img" src="img/мемы/мем1.jpg" alt = "между первой и второй вишневая" width="300px">
+                <img class="gallery__img" src="img/мемы/images.jpg" alt = "луна vs Саратов" width="300px">
+                <img class="gallery__img" src="img/мемы/funny-klev-club-p-smeshnie-kartinki-pro-saratov-29.jpg" alt = "одуванчик" width="300px">
+                <img class="gallery__img" src="img/мемы/Дрифт.jpg" alt = "веселая жизнь" width="300px">
+            </div>
+        </section>
+        <section class="reason reasons__note">
+            <h2 class="reason__heading">Достопримечательности</h2>
+            <table class="attractions-table">
+                <thead>
+                    <tr class="attractions-table__row">
+                        <th class="attractions-table__header">Фоточка</th>
+                        <th class="attractions-table__header">Достопримечательность</th>
+                        <th class="attractions-table__header">Адрес</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="attractions-table__row">
+                        <td class="attractions-table__cell"><img src="img/Без%20названия.jpg" alt="Семен"></td>
+                        <td class="attractions-table__cell">Трамвай Семен</td>
+                        <td class="attractions-table__cell">Волжская ул., 28</td>
+                    </tr>
+
+                    <tr class="attractions-table__row">
+                        <td class="attractions-table__cell"><img src="img/Консерватория.jpg" alt="консерватория"></td>
+                        <td class="attractions-table__cell">Консерватория</td>
+                        <td class="attractions-table__cell">пр-т. Столыпина, 1</td>
+                    </tr>
+
+                    <tr class="attractions-table__row">
+                        <td class="attractions-table__cell"><img src="img/2000-освещённый%20мост1.jpg" alt="мост"></td>
+                        <td class="attractions-table__cell">Мост через Волгу</td>
+                        <td class="attractions-table__cell">51°31′02″ с. ш. 46°04′14″ в. д.</td>
+                    </tr>
+
+                    <tr class="attractions-table__row">
+                        <td class="attractions-table__cell"><img src="img/scale_1200.jpg" alt="парк" width=></td>
+                        <td class="attractions-table__cell">Парк Победы</td>
+                        <td class="attractions-table__cell">ул. Соколовая</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </div>
 </main>
 
