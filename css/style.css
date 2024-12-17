@@ -5,6 +5,10 @@
     background-color: #80C7F2;
 }
 
+.header h1 {
+    font-size: 50px;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -175,6 +179,7 @@
 
 .attractions-table__header {
     text-align: center;
+    font-size: 17px;
 }
 
 .attractions-table__cell {
@@ -219,4 +224,5 @@ body {
 
 * {
     font-family: sans-serif;
+    font-size: 17px;
 }
