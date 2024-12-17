@@ -6,7 +6,7 @@
 }
 
 .header h1 {
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .main {
@@ -14,6 +14,13 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
+}
+
+pre {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
 }
 
 .title {
@@ -24,7 +31,7 @@
     flex-wrap: nowrap;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .menu {
         flex-direction: column;
     }
@@ -76,7 +83,7 @@
     flex-wrap: wrap;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .clue__weather {
         display: none;
     }
@@ -179,7 +186,7 @@
 
 .attractions-table__header {
     text-align: center;
-    font-size: 17px;
+    font-size: 3vh;
 }
 
 .attractions-table__cell {
@@ -195,7 +202,7 @@
     background-color: #4BB2F2;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .attractions-table__cell,
     .attractions-table__header {
         font-size: 10px;
@@ -204,7 +211,7 @@
 
 .footer {
     background-color: #80C7F2;
-    height: 20px;
+    height: 25px;
     border-top: thin solid #3C5159;
     position: fixed;
     bottom: 0;
