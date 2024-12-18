@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="./scripts/load.js"></script>
     <script src="./scripts/menu.js"></script>
+    <script src="./scripts/suggestions.js"></script>
     <!--    <link rel="stylesheet" href="outline-prototype-safe.css">-->
 </head>
 <body>
@@ -28,17 +29,24 @@
 </header>
 
 <main class="main">
+    <div class="clue">
+        <article class="general-info clue__main-note">
+            <h1 class="general-info__header">Ваши причины посетить Саратов</h1>
+            <p class="general-info__text"> Здесь Вы можете предложить свои причины посетить Саратов
+            </p>
+        </article>
+    </div>
+    <form class="suggestion-form">
+        <label for="user_name" class="suggestion-form__name">Ваше имя:</label><br>
+        <input type="text" id="user_name" name="user_name" required><br>
+
+        <label for="user_reason">Причина посетить Саратов:</label><br>
+        <textarea id="user_reason" class="suggestion-form__text" name="user_reason" required></textarea><br>
+
+        <input type="submit" value="Отправить">
+    </form>
     <div class="reasons">
-        <section class="reason reasons__note">
-            <h2 class="reason__heading">МЕМЫ</h2>
-            <div class="gallery">
-                <img class="gallery__img" src="img/мемы/63038af676761_img_desktop.jpg" alt="Самара" width="300px">
-                <img class="gallery__img" src="img/мемы/мем1.jpg" alt = "между первой и второй вишневая" width="300px">
-                <img class="gallery__img" src="img/мемы/images.jpg" alt = "луна vs Саратов" width="300px">
-                <img class="gallery__img" src="img/мемы/funny-klev-club-p-smeshnie-kartinki-pro-saratov-29.jpg" alt = "одуванчик" width="300px">
-                <img class="gallery__img" src="img/мемы/Дрифт.jpg" alt = "веселая жизнь" width="300px">
-            </div>
-        </section>
+
     </div>
 </main>
 

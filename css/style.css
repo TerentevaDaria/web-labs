@@ -122,10 +122,12 @@ pre {
 }
 
 .reasons__note {
-    margin: 1%;
+    margin-top: 1%;
+    width: 100%;
 }
 
 .reasons {
+    width: 95%;
     padding: 0.1%;
 }
 
@@ -225,6 +227,10 @@ pre {
     display: flex;
 }
 
+.main {
+    margin-bottom: 25px;
+}
+
 .footer__quote {
     width: auto;
     display: table;
@@ -250,6 +256,33 @@ pre {
     .footer__quote {
         font-size: 10px;
     }
+}
+
+.suggestion-form {
+    padding: 0.5%;
+    background-color: #A7DDF2;
+    box-shadow: 10px 10px 10px #4BB2F2;
+    border: thin double #3C5159;
+    width: 50%;
+}
+
+@media (max-width: 800px) {
+    .suggestion-form {
+        width: 95%;
+    }
+}
+
+.suggestion-form__text {
+    max-width: 900px;
+    width: 95%;
+    /*margin: 0 5%;*/
+    min-width: 100px;
+}
+
+.suggestion-form__name {
+    max-width: 600px;
+    width: 30%;
+    min-width: 150px;
 }
 
 body {
