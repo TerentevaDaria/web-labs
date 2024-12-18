@@ -71,6 +71,11 @@ pre {
     text-align: center;
 }
 
+.menu__item_active {
+    background-color: #0097F4;
+    border: thin double #3C5159;
+}
+
 .menu__item:hover {
     background-color: #A7DDF2;
 }
@@ -217,12 +222,34 @@ pre {
     bottom: 0;
     left: 0;
     right: 0;
+    display: flex;
 }
 
 .footer__quote {
     width: auto;
     display: table;
     margin: auto;
+    flex: 70%;
+    text-align: center;
+}
+
+#load {
+    flex: 30%;
+    text-align: center;
+    margin: 0;
+    padding: 2px;
+    /*font-size: 13px;*/
+    color: #3C5159;
+}
+
+@media (max-width: 800px) {
+    #load {
+        font-size: 7px;
+    }
+
+    .footer__quote {
+        font-size: 10px;
+    }
 }
 
 body {
