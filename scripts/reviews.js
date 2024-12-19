@@ -48,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function() {
     ).catch((err) => {
         preloader.style.display = "none";
         err_div.style.display = "block";
-        console.log("here");
-        err_div.textContent = "Что-то пошло не так";
+        err_div.textContent = "Что-то пошло не так" + err.message;
     });
 })

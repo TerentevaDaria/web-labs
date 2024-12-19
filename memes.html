@@ -7,9 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>n причин посетить Саратов</title>
     <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="./scripts/load.js"></script>
     <script src="./scripts/menu.js"></script>
-    <!--    <link rel="stylesheet" href="outline-prototype-safe.css">-->
+    <script src="./scripts/memes.js"></script>
+
 </head>
 <body>
 <header class="header">
@@ -31,12 +36,36 @@
     <div class="reasons">
         <section class="reason reasons__note">
             <h2 class="reason__heading">МЕМЫ</h2>
-            <div class="gallery">
-                <img class="gallery__img" src="img/мемы/63038af676761_img_desktop.jpg" alt="Самара" width="300px">
-                <img class="gallery__img" src="img/мемы/мем1.jpg" alt = "между первой и второй вишневая" width="300px">
-                <img class="gallery__img" src="img/мемы/images.jpg" alt = "луна vs Саратов" width="300px">
-                <img class="gallery__img" src="img/мемы/funny-klev-club-p-smeshnie-kartinki-pro-saratov-29.jpg" alt = "одуванчик" width="300px">
-                <img class="gallery__img" src="img/мемы/Дрифт.jpg" alt = "веселая жизнь" width="300px">
+<!--            <div class="gallery">-->
+<!--                <img class="gallery__img" src="img/мемы/63038af676761_img_desktop.jpg" alt="Самара" width="300px">-->
+<!--                <img class="gallery__img" src="img/мемы/мем1.jpg" alt = "между первой и второй вишневая" width="300px">-->
+<!--                <img class="gallery__img" src="img/мемы/images.jpg" alt = "луна vs Саратов" width="300px">-->
+<!--                <img class="gallery__img" src="img/мемы/funny-klev-club-p-smeshnie-kartinki-pro-saratov-29.jpg" alt = "одуванчик" width="300px">-->
+<!--                <img class="gallery__img" src="img/мемы/Дрифт.jpg" alt = "веселая жизнь" width="300px">-->
+<!--            </div>-->
+            <div class="swiper">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="swiper__img" src="img/мемы/63038af676761_img_desktop.jpg" alt="Самара">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper__img" src="img/мемы/мем1.jpg" alt = "между первой и второй вишневая">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper__img" src="img/мемы/images.jpg" alt = "луна vs Саратов">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper__img" src="img/мемы/funny-klev-club-p-smeshnie-kartinki-pro-saratov-29.jpg" alt = "одуванчик">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper__img" src="img/мемы/Дрифт.jpg" alt = "веселая жизнь">
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
             </div>
         </section>
     </div>
